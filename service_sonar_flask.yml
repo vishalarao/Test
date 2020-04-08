@@ -12,3 +12,4 @@ spec:
     targetPort: 5151
   selector:
     app: sonar-flask
+    
