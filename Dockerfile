@@ -8,6 +8,6 @@
 # ENTRYPOINT ["python"]
 # CMD ["firstapp.py"]
 
-FROM ubuntu:latest
+FROM python:{version}-buster
 RUN pip install -r requirements.txt
 CMD ["firstapp.py"]
