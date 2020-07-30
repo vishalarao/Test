@@ -9,5 +9,8 @@
 # CMD ["firstapp.py"]
 
 FROM python:{version}-buster
+COPY . /app
+WORKDIR /app
 RUN pip install -r requirements.txt
+ENTRYPOINT ["python"]
 CMD ["firstapp.py"]
